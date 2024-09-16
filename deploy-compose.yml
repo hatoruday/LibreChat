@@ -41,7 +41,7 @@ services:
       - api
     restart: always
     volumes:
-      - ./client/nginx.conf
+      - /home/ggrrm/LibreChat/client/nginx.conf
       - /etc/letsencrypt/live/hatoruday-chat.shop:/etc/letsencrypt/live/hatoruday-chat.shop
       - /etc/letsencrypt/archive/hatoruday-chat.shop:/etc/letsencrypt/archive/hatoruday-chat.shop
       - /etc/letsencrypt/options-ssl-nginx.conf:/etc/letsencrypt/options-ssl-nginx.conf
